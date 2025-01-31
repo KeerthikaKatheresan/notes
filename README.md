@@ -59,7 +59,41 @@ alter vs modify
 8.Constraint
 9.Table level constraint ,column level constraint
 how to use check comstraint after creation of table->homework
-create 2 table with foreign key
+create 2 table with foreign key and use constrain and try voilating it
+how to add cascade command in parent table(important 
 Command 1:
 create table empl(empid number(6),last_name varchar2(25) not null,Salary number(10),dept_id number(5),
 constraint dept_fk foreign key(dept_id) references department (dept));
+
+-------------------------------------------------------------------------------------------
+
+-- create
+CREATE TABLE EMPLOYEE (
+  empId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  dept TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE VALUES (0002, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE VALUES (0003, 'Ava', 'Sales');
+
+-- fetch 
+SELECT * FROM EMPLOYEE WHERE dept = 'Sales';
+select * from employee where empId=001;
+
+create table company(
+company_name TEXT,
+reference_id int,
+constraint fk_refer foreign key(reference_id)
+references employee(empId) on delete cascade
+);
+
+insert into company values("Mphais",001);
+insert into company values("Mphasis",002);
+insert into company values("CisCo",003);
+
+select * from company;
+
+
