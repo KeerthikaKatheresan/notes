@@ -60,4 +60,6 @@ alter vs modify
 9.Table level constraint ,column level constraint
 how to use check comstraint after creation of table->homework
 create 2 table with foreign key
+Command 1:
+create table empl(empid number(6),last_name varchar2(25) not null,Salary number(10),dept_id number(5),
 constraint dept_fk foreign key(dept_id) references department (dept));
