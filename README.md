@@ -60,3 +60,4 @@ alter vs modify
 9.Table level constraint ,column level constraint
 how to use check comstraint after creation of table->homework
 create 2 table with foreign key
+constraint dept_fk foreign key(dept_id) references department (dept));
