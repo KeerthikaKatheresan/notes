@@ -25,15 +25,14 @@ git pull->pull the updated project in your system
 git log
 
 angular,java springboot,mysql,
-https://github.com/KeerthikaKadhiresan/sample_project.git->repository directory/link
 
-Group id:com.mphasis
+
+Group id:
 artifact id->projrct name(sample_project)
 package shows the path hirerachy
 
 
 system info->system name
-2611261->Harsha->Ping in teams
 
 open git bash
 1.git status
@@ -60,4 +59,4 @@ alter vs modify
 8.Constraint
 9.Table level constraint ,column level constraint
 how to use check comstraint after creation of table->homework
-
+create 2 table with foreign key
