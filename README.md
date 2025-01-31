@@ -40,7 +40,7 @@ open git bash
 3.git add
 5.config your username and email
 4.git commit
-6. git remote add origin https://github.com/KeerthikaKadhiresan/sample_repository.git
+6. git remote add origin https://github.com/KeerthikaKatheresan/sample_repository.git
 7.git push -u origin master
 rm -rf .git
 
