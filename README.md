@@ -158,5 +158,6 @@ hashcode
 s1.equals==s2.equals(imp interview question)
 difference between = and == (imp interview question)
 if two object have same values and compares with == and != and = what are the results?
+difference between equals and equalsignore()
 
 
