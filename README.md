@@ -95,5 +95,24 @@ insert into company values("Mphasis",002);
 insert into company values("CisCo",003);
 
 select * from company;
+-----------------------------------------------------------------------------------
+Normalization:
+	Deletion Anamoly and pitfall
+1NF,2NF,3NF
+1NF:
+	Table data should be atomic imp-atomic(futher decompose)
+2nf:
+	Non primary attribute cannot be partialy dependent
+super key -combination of more than on primary key that can be used to fetch data
+
+3NF:
+	No trasitive dependency
+a->b b->c a->c
+	no column should be dependent upon another column in a transitive manner
+BCNF:
+	Super key should be primary key
+	More strict about super key
+-------------------------------------------------------------------------------------------
+
 
 
