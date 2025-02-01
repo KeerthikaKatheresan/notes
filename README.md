@@ -114,5 +114,43 @@ BCNF:
 	More strict about super key
 -------------------------------------------------------------------------------------------
 
+public class Employee1{
+	int id;
+	String name;
+	int salary;
+	public Employee1(int id,String nm,int sl)
+	{this.id=id;
+	this.name=nm;
+	this.salary=sl;
+	}
+	public String toString()
+	{return getClass()+"/nEmployee id is:="id+" "+"/Employee Name id:= +name);
+	}
+	public void Calculate_Salary(int sl)
+	{
+	 int hike=(salary)*(salary*10/100);
+	 System.out.println("Salary"+hike);
+	 
+	}
+	public static void main(String[] args)
+	{Employee1 e1=new Employee1(101,"Rohit",25000);
+	System.out.println(e1);
+	System.out.println(e1.toString());
+	e1.Calculate_Salary(25000);}
+};
+--------------------------------------
+pojo class-setter and getter method
+this.name=name (twins example)
+without object we can call static variables because the are bounded to class and initialized with zero
+why static variable
+Java is not purely OOPS Language because of static and static is not OOP 
+hash code based on java
+Wrapper class -JavaTpoint website
+Autoboxing and Unboxing
+Array-immutable and classes,use new keyword,adjacent memory ,homogenous elements only can be stored
+Interface 
+parent area 
+child class overwrite area
+-----------------------------------------------
 
 
