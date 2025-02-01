@@ -153,4 +153,10 @@ parent area
 child class overwrite area
 -----------------------------------------------
 
+object as argument imp
+hashcode
+s1.equals==s2.equals(imp interview question)
+difference between = and == (imp interview question)
+if two object have same values and compares with == and != and = what are the results?
+
 
