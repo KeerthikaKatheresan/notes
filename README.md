@@ -159,5 +159,93 @@ s1.equals==s2.equals(imp interview question)
 difference between = and == (imp interview question)
 if two object have same values and compares with == and != and = what are the results?
 difference between equals and equalsignore()
+---------------------------------------
+git branch
+git checkout phase3
+------------------
+Loosly coupled runtime polymorphism
+Factory design pattern
+Upcasting and Downcasting
+---------------------------
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        
+        Scanner s1=new Scanner(System.in);
+        System.out.println("Enter total number of names you wan to enter");
+        int num=s1.nextInt();
+        s1.nextLine();
+        
+        String[] names=new String[num];
+        for(int i=0;i<num;i++)
+        {
+            System.out.print("Enter name "+(i+1)+":");
+            names[i]=s1.nextLine();
+        }
+        
+        System.out.println("The names you have entered");
+        for(String i:names)
+        {
+            System.out.println(i);
+        }
+                
+    }
+}
+---------------------------
+jspn,servlets
+class and method
+mysql
+core javaspringboot
+angular
+After 4 modules Each assement 40 question total of 70 min mcq concept based
+----------------------------------
+
+collection framework
+input an doutput streams
+multi threading
+JDBC API,JDBC Driver ,submitting queries and getting results using JDBC API
+,Performing CRUD operation using the JDBC API,Statement & PreparedStatement,ResultSetMetaData adn DatabaseMetaData
+Working with exceptions
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Intro to sql and database connection
+DDL &DML Connections
+Query multiple 
+Functions  and Subqueries in SQL
+-------------------------------------
+String s1="Kee"->SCP Stored
+String s3="Kee"->SCP Stored		
+String s2=new String("Kee")-> stored in heap
+but both have same hashcode
+== and equals()
+s1==s3  true because stores in same location
+
+s1==s2  false
+String immutability
+
+Serilization-Converting obj to stream and vise versa
+Comparable 
+CharSequence 
+Synchronization and thread safety,Deadlock 
+StringBuffer vs StringBuilder
+charAt
+Java string class methods
+What is thread safety and not thread safety
+Array class in Java
+
+
+
+s1="Hello"->address 4000
+s1=s1.concat("World") ->now s1 point to new address 5002
+Arrays are references in java
+
+
+
+-----------------------
+1.Jenkins
+2.open jdk
+3.spring tools suit(software center)
+4.maven(software center)
+5.tomcat(software center)
 
 
