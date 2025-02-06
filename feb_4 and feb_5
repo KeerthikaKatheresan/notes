@@ -1,0 +1,158 @@
+Data Base (MySQL) queries: 
+1.create database SQLDB; 
+2.show database 
+3.show tables; 
+4.create table Employee(int empId(10),varchar name,int salary); 
+5.insert into employee values(101,”Rohit”,50000); 
+6.Alter table employee add Primary key (empId); 
+7.Alter table employee modify(varchar name(15)); 
+8.select *from Employees; 
+9.update Employees...... 
+10.Revoke delete on tableName from userName; 
+11.Unique constrain,check constrain,,enitity intergrity constraints,enabling and disabling constraints 
+12.Savepoint ,rollback,commit 
+ 
+start transaction; 
+
+SAVEPOINT sp1;  
+SET SQL_SAFE_UPDATES = 0; 
+
+ UPDATE users SET age = 32 WHERE name = 'Keerthika';  
+UPDATE users SET age = 26 WHERE name = 'Gayu'; 
+ SELECT * FROM users; ROLLBACK TO sp1; 
+
+ COMMIT; 
+
+--SELECT * FROM users; 
+
+ 
+
+ign 
+13.Joins 
+Hiberet convert pojo class to table 
+------------ 
+aadhar  
+pan 
+id card xerox 
+sign 
+----------------- 
+MCQ ->Choose definition for left,right join 
+ 
+ 
+
+MySQL 
+GitHub 
+Core Java 
+RDBMS 
+JSP Servelet-Feb 14 
+each topic min 2 questions 
+topic wise prepare usingwebsite –refer 4 website with has answers 
+java guides,sanfactory 
+
+ 
+------------------------------------------------------------------------------------------------------------------Java Exceptions: 
+if we handling exception the balance lines will continue to run 
+------------------------------------------------------------------------------------------------------------------ 
+// Online Java Compiler 
+
+// Use this editor to write, compile and run your Java code online 
+
+package exceptionHandling; 
+
+public class InvalidPassingMarks extends Exception{ 
+
+    public InvalidPassingMarks(String str) 
+
+    { 
+
+        super(str); 
+
+    } 
+
+} 
+
+public class StudentMarks{ 
+
+    public static void calculatePercentage(int phy,int chem,int maths)throws FallException{ 
+
+        if(pyh<35||chem<35||maths<35) 
+
+        { 
+
+            throw new FallException(message:"Studen has failed in one or more subjectTry"); 
+
+        } 
+
+        double total=phy+chem+maths; 
+
+        double percentage=(total/300)*100; 
+
+        System.out.println("Total percentage:"+percentage+"%"); 
+
+    } 
+
+    public static void main(String args[]){ 
+
+        Scanner scanner=new Scanner(System.in); 
+
+        System.out.println("Enter phy marks"); 
+
+        int phy=scanner.nextInt(); 
+
+        System.out.println("Enter chem marks:"); 
+
+        int chem=scanner.nextInt(); 
+
+        System.out.println("Enter maths marks:"); 
+
+        int maths=scanner.nextInt(); 
+
+         
+
+        try{ 
+
+            calculatePercentage(phy,chem,maths); 
+
+        } 
+
+        catch(InvalidPassingMarks e) 
+
+        { 
+
+            System.out.println("Exception"+e.getMessage()); 
+
+        } 
+
+         
+
+    } 
+
+} 
+
+------------------------------------------------------------------------------------------------------------------ 
+
+Multithreading 
+Rule: 
+1.Extend thread class 
+2.Override run method 
+Thread life cycle  
+new thread 1st life cycle –runnable?  
+try to learn in context of web 
+-------------- 
+class MultithreadingDemo extends Thread{ 
+
+Public void run() 
+
+{ 
+
+try 
+
+{ 
+
+system.out.println(“Thread”+Thread.currentThread9).getId()+”is running”);k 
+
+} 
+
+} 
+
+} 
