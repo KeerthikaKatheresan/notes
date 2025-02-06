@@ -1,0 +1,92 @@
+Java Collection: 
+Collections-Class 
+Collection-Java Collection 
+Obj stored in heap 
+Primitives are stored in Stack 
+Jvm architecture,paramgem/metaspace 
+ 
+ 
+ 
+------------------------------------------------------- ------------- 
+1.Write  a program get the input from user using ArrayList then remove the even numbers and print the odd numbers. 
+ 
+ 
+import java.util.ArrayList; 
+
+import java.util.Scanner; 
+
+  
+
+public class Main{ 
+
+    public static void main(String[] args) 
+
+    { 
+
+        Scanner sc=new Scanner(System.in); 
+
+        ArrayList<Integer> num=new ArrayList<>(); 
+
+        System.out.println("Enter total number"); 
+
+        int total=sc.nextInt(); 
+
+         
+
+        System.out.println("Enter the number:"); 
+
+        for(int i=0;i<total;i++) 
+
+        { 
+
+            num.add(sc.nextInt()); 
+
+        } 
+
+         
+
+        num.removeIf(i->i%2==0); 
+
+        System.out.println("Odd numbers in the list:"+num); 
+
+        sc.close(); 
+
+         
+
+    } 
+
+} 
+ 
+--------------------------------------------------------------------------------------- 
+Revise collections 
+List: 
+ArrayList->Not thread safe 
+LinkList->Not thread safe 
+Vector->Thread Safe 
+Stack->Not thread safe 
+--------- 
+Queue: 
+Priority Queue->Not thread safe 
+Array Queue->Not thread safe 
+--------------------------------------------------------------------------------------  
+www.javaguides.net 
+ 
+npm install -g @angular/cli@17 
+ 
+ng new my-app 
+select css 
+no(i guess) 
+--------------- 
+angular.dev/references/versions 
+git,git hub,rdbms,core java,advanced java(serverlet,jsp) 
+topicwise study 
+object class study well important topic 
+Comparable and comparator in sorting 
+setter and constructor 
+use comparator and pass 2 arguments and call collection.sort() 
+
+Normalization –1NF,1NF,3NF,4NF,BCNF-Key points 3  
+
+ 
+  
+ 
